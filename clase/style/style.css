@@ -1,0 +1,78 @@
+/*.contenedor{
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    position: relative; /* va en el padre*/ /*por defecto viene position: static*/
+/*}
+
+/*.bolita{
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute; /* va en el que quiero modificar*/
+    /*top: 10px;
+    right: 10px;
+    background-color: lightcoral;
+    /* top 50% left 50% 
+    transform: translate(-50%, -50%) para centrar con position (cuando en realidad se centra con display flex)  */
+    /*display flex (al contenedor padre), justify content: center (eje x) align items: center (eje y)*/
+/*}
+
+
+/* imagen de fondo: background-image: url("../...")
+height: 100vh (pantalla completa)
+width: 100%
+backgroud-position: center (para posicionar la imagen de fondo)
+backgroud-size: cover(cubre)
+para que se vea mas claro:
+div en html
+div class filtro
+.filtro{ width 100%, height: 100vh, backgroud: elegir color y bajarle la transparencia
+
+    filter: grayscale (1) (el filtro se aplica en la imagen)
+            blur (10px) borroso
+    background-image: linear-gradient(to right, #57a0e4 0%, #577ae4 80%);
+*/
+
+
+.contenedor {
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    border: 1px solid black;
+    background-color: lightblue;
+    position: relative;
+}
+
+.cuadrado-1,
+.cuadrado-2{
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cuadrado-1{
+    background-color: lightcoral;
+    z-index: 4; /*para cambiar el orden de visualizacion, por defecto 0. el que tenga el numero mas grande se ve en el navegador*/
+}
+
+.cuadrado-2{
+    background-color: aquamarine;
+    z-index: 2;
+}
+
+/*object-fit:cover  para cubrir bien la imagen*/
+/*tarea hacer tarjeta con foto*/
+
+/*aside html barra lateral */
+
+/*mobile first:  responsive*/
